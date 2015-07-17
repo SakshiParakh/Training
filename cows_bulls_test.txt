@@ -1,0 +1,31 @@
+Test case scenarios for cows and bulls :
+
+  .word.config file :
+
+    Existence of the word config file.
+    A non-empty config file should exist
+    The input taken from the file should be a word
+
+  the word to guess :
+
+    The word extracted from the file is empty or invalid, raise exception
+    The word should be a set of alphabetic characters
+
+  the guessed_word :
+
+    The guessed_word inputed from the user is empty or invalid, raise exception
+    The guessed_word should be a set of alphabetic charactes
+
+  Game play :
+
+    If words match should return win.
+    If words don't match :
+      length matches :
+        the function should return the correct number of cows and bulls
+        and Attempts should get incremented
+      length doesnot match :
+        should return invalid length
+    when Attempts > 5
+      function should return lost. and ask for further play
+
+
